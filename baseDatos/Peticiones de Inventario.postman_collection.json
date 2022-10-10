@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "63bec161-25eb-404b-8f1f-580a1f675fc3",
+		"name": "Peticiones de Inventario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23723419"
+	},
+	"item": [
+		{
+			"name": "Listar usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"David Otriz\",\r\n    \"email\": \"davidom@gmail.com\",\r\n    \"estado\":\"Activo\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Alberto Miranda\",\r\n    \"email\": \"alberto.miranda@gmail.com\",\r\n    \"estado\":\"Activo\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/usuario/6341a75e0dd55f1070bf98e4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario",
+						"6341a75e0dd55f1070bf98e4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar estado del equipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/estado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear estado del equipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Dañado\",\r\n    \"estado\": \"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/estado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar estado del equipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"En arreglo por una semana\",\r\n    \"estado\": \"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/estado/6342bf5b58896861b7da82be",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estado",
+						"6342bf5b58896861b7da82be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar estado del equipo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/estado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar marca",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Marca",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \" Computador LG\",\r\n    \"estado\" : \"Activo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Marca",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \" Computador LG 10 PRO\",\r\n    \"estado\" : \"Inactivo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/marca/6342a9f3313c69ce46a2aadc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marca",
+						"6342a9f3313c69ce46a2aadc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Marca",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Tipo Equipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tipoEquipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tipoEquipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Tipo Equipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \" Telefono movil\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tipoEquipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tipoEquipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Tipo Equipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \" Telefono movil\",\r\n    \"estado\": \"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tipoEquipo/6342cb6522c172e87e1d2fa4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tipoEquipo",
+						"6342cb6522c172e87e1d2fa4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Tipo Equipo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tipoEquipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tipoEquipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Inventario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/inventario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Inventario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial\":\"121212\",\r\n    \"modelo\": \"6789\",\r\n    \"descripcion\": \"Computador Portatil RYZEN 7\",\r\n    \"foto\": \"https://foto.com\",\r\n    \"color\": \"Blanco\",\r\n    \"fechaCompra\": \"2022-10-01\",\r\n    \"precio\":3200000,\r\n    \"usuario\":{\r\n        \"_id\":\"6341c9461921c46a2435f4fd\"\r\n    },\r\n    \"marca\":{\r\n        \"_id\":\"6341f7bb1852fda089b6209f\"\r\n    },\r\n    \"estado\":{\r\n        \"_id\":\"6342bfbe58896861b7da82c1\"\r\n    },\r\n    \"tipoEquipo\":{\r\n        \"_id\":\"6342cb3522c172e87e1d2fa1\"\r\n    }\r\n    }\r\n\r\n    \r\n    \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/inventario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Inventario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial\":\"141212\",\r\n    \"modelo\": \"6789\",\r\n    \"descripcion\": \"Computador Portatil RYZEN 7\",\r\n    \"foto\": \"https://foto.com\",\r\n    \"color\": \"Blanco\",\r\n    \"fechaCompra\": \"2022-10-01\",\r\n    \"precio\":3800000,\r\n    \"usuario\":{\r\n        \"_id\":\"6341c9461921c46a2435f4fd\"\r\n    },\r\n    \"marca\":{\r\n        \"_id\":\"6341f7bb1852fda089b6209f\"\r\n    },\r\n    \"estado\":{\r\n        \"_id\":\"6342bfbe58896861b7da82c1\"\r\n    },\r\n    \"tipoEquipo\":{\r\n        \"_id\":\"6342cb3522c172e87e1d2fa1\"\r\n    }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/inventario/6342e49f5f3f4b17d0daf168kkk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventario",
+						"6342e49f5f3f4b17d0daf168kkk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Inventario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/inventario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventario"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
